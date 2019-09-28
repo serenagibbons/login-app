@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">LoginApp</string>
     <string name="image_desc">welcome image</string>
+    <string name="prompt">Please log in or register</string>
+    <string name="btn_reg">Register</string>
+    <string name="btn_login">Log in</string>
+    <string name="label_login">Log in to LoginApp</string>
+    <string name="label_reg">Register for LoginApp</string>
+
 </resources>

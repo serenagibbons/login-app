@@ -1,13 +1,9 @@
 package com.example.loginapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
-import java.time.Duration;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -16,6 +12,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        // show splash screen for 5 seconds before switching to MainActivity
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -23,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(mainIntent);
             }
-        }, 4000);
+        }, 5000);
 
 
     }
