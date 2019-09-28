@@ -6,5 +6,13 @@
     <string name="btn_login">Log in</string>
     <string name="label_login">Log in to LoginApp</string>
     <string name="label_reg">Register for LoginApp</string>
+    <string name="edt_fName">first name</string>
+    <string name="edt_lName">last name</string>
+    <string name="edt_DOB">date of birth</string>
+    <string name="edt_Email">email</string>
+    <string name="edt_Password">password</string>
+
+
+
 
 </resources>
