@@ -8,10 +8,24 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    String storedFName, storedLName, storedEmail, storedDOB, storedPass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent i= getIntent();
+        Bundle b = i.getExtras();
+
+        if(b!=null)
+        {
+            storedFName =(String) b.get("First Name");
+            storedLName =(String) b.get("Last Name");
+            storedDOB =(String) b.get("Date of Birth");
+            storedEmail =(String) b.get("Email");
+            storedPass =(String) b.get("Password");
+        }
     }
 
     // when registration button clicked go to registration activity
@@ -21,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
     // when log in button clicked go to log in activity
     public void goToLogIn(View view) {
-        startActivity(new Intent(this, LoginActivity.class));
+        Intent logInIntent = new Intent(this, LoginActivity.class);
+        logInIntent.putExtra("First Name", storedFName);
+        logInIntent.putExtra("Last Name", storedLName);
+        logInIntent.putExtra("Email", storedEmail);
+        logInIntent.putExtra("Date of Birth", storedDOB);
+        logInIntent.putExtra("Password", storedPass);
+        startActivity(logInIntent);
     }
 }
