@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -33,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void logIn(View view) {
         if (e1.getText().toString().isEmpty() || e2.getText().toString().isEmpty()) {
-            Toast.makeText(this, getResources().getString(R.string.toast_valid), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getResources().getString(R.string.toast_logFields), Toast.LENGTH_LONG).show();
             return;
         }
         else if (!(e1.getText().toString().equals(userEmail) && e2.getText().toString().equals(userPass))) {

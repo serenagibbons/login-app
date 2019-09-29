@@ -19,11 +19,8 @@ public class RegistrationActivity extends AppCompatActivity {
 
     EditText e1, e2, e3, e4, e5;
     boolean valid = true;
-    String fName;
-    String lName;
-    String dob;
-    String email;
-    String pass;
+    String fName, lName, dob, email, pass;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +39,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 || e3.getText().toString().isEmpty() || e4.getText().toString().isEmpty()
                 || e5.getText().toString().isEmpty()) {
             // if any fields are empty display toast and return
-            Toast.makeText(this, getResources().getString(R.string.toast), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getResources().getString(R.string.toast_regFields), Toast.LENGTH_LONG).show();
             return;
         }
 
@@ -67,6 +64,7 @@ public class RegistrationActivity extends AppCompatActivity {
         register.putExtra("Date of Birth", dob);
         register.putExtra("Email", email);
         register.putExtra("Password", pass);
+        register.putExtra("Success", true);
         startActivity(register);
 
     }

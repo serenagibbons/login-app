@@ -4,18 +4,27 @@
     <string name="prompt">Please log in or register</string>
     <string name="btn_reg">Register</string>
     <string name="btn_login">Log in</string>
+
+    <!-- Activity labels -->
     <string name="label_login">Log in to LoginApp</string>
     <string name="label_reg">Register for LoginApp</string>
+
+    <!-- EditText hints -->
     <string name="edt_fName">First Name</string>
     <string name="edt_lName">Last Name</string>
     <string name="edt_DOB">Date of Birth</string>
     <string name="edt_Email">Email</string>
     <string name="edt_Password">Password</string>
-    <string name="toast">You must complete all fields to register</string>
+
+    <!-- Toast messages -->
+    <string name="toast_regFields">You must complete all fields to register</string>
+    <string name="toast_logFields">You must complete all fields to log in</string>
     <string name="toast_valid">Invalid data entered</string>
     <string name="toast_name">First name must be 3 to 30 characters</string>
     <string name="toast_email">Invalid email address</string>
     <string name="toast_login">Invalid email and password combination</string>
+    <string name="toast_success">You have successfully registered</string>
+
 
 
 </resources>
