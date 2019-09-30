@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, getResources().getString(R.string.toast_login), Toast.LENGTH_LONG).show();
             return;
         }
-        startActivity(new Intent(this, AppActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
 
     }
 
