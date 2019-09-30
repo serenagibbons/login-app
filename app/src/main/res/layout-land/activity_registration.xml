@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="200dp"
+        android:paddingRight="200dp"
+        android:background="@drawable/login_background"
+        tools:context=".RegistrationActivity">
+
+        <!-- Registration label -->
+        <TextView
+            android:id="@+id/textReg"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/label_reg"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryLight"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <TextView
+            android:id="@+id/fNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryLight"
+            android:text="@string/edt_fName" />
+
+        <EditText
+            android:id="@+id/edtFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edt_fName"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:backgroundTint="@color/lightGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textReg"
+            app:layout_constraintVertical_bias="0.118" />
+
+        <TextView
+            android:id="@+id/lNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryLight"
+            android:text="@string/edt_lName" />
+
+        <EditText
+            android:id="@+id/edtLName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edt_lName"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:backgroundTint="@color/lightGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtFName"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/DOBLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryLight"
+            android:text="@string/edt_DOB" />
+
+        <EditText
+            android:id="@+id/edtDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightGrey"
+            android:hint="@string/edt_DOBFormat"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:textColor="@color/lightGrey"
+            android:textColorHint="@color/lightGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtLName"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryLight"
+            android:text="@string/edt_Email" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edt_Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:backgroundTint="@color/lightGrey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtDOB"
+            app:layout_constraintVertical_bias="0.026" />
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryLight"
+            android:text="@string/edt_Password" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edt_Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:backgroundTint="@color/lightGrey"
+            app:layout_constraintTop_toBottomOf="@id/edtEmail"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+            android:onClick="registerUser"/>
+
+        <TextView
+            android:id="@+id/textAcc"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:text="@string/promptLogIn"
+            android:textAlignment="center"
+            android:textColor="@color/lightGrey" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="goToLogIn"
+            android:text="@string/btn_login" />
+
+    </LinearLayout>
+</ScrollView>
