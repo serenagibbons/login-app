@@ -4,10 +4,12 @@
     <string name="prompt">Please log in or register</string>
     <string name="btn_reg">Register</string>
     <string name="btn_login">Log in</string>
+    <string name="promptRegister">Don\'t have an account?</string>
+    <string name="promptLogIn">Already have an account?</string>
 
     <!-- Activity labels -->
-    <string name="label_login">Log in to LoginApp</string>
-    <string name="label_reg">Register for LoginApp</string>
+    <string name="label_login">Log in</string>
+    <string name="label_reg">Register</string>
 
     <!-- EditText hints -->
     <string name="edt_fName">First Name</string>

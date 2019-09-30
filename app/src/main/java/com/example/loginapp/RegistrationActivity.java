@@ -83,4 +83,8 @@ public class RegistrationActivity extends AppCompatActivity {
         return valid;
     }
 
+    public void goToLogIn(View view) {
+        Intent i = new Intent(this, LoginActivity.class);
+        startActivity(i);
+    }
 }

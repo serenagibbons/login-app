@@ -42,4 +42,8 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(new Intent(this, AppActivity.class));
 
     }
+
+    public void goToRegistration(View view) {
+        startActivity(new Intent(this, RegistrationActivity.class));
+    }
 }
