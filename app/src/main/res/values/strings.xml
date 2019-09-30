@@ -1,16 +1,18 @@
 <resources>
     <string name="app_name">LoginApp</string>
     <string name="image_desc">welcome image</string>
-    <string name="prompt">Please log in or register</string>
-    <string name="btn_reg">Register</string>
-    <string name="btn_login">Log in</string>
     <string name="promptRegister">Don\'t have an account?</string>
     <string name="promptLogIn">Already have an account?</string>
+
+    <!-- Button labels -->
+    <string name="btn_reg">Register</string>
+    <string name="btn_login">Log in</string>
+    <string name="btn_logout">Log out</string>
 
     <!-- Activity labels -->
     <string name="label_login">Log in</string>
     <string name="label_reg">Register</string>
-    <string name="label_welcome">Welcome</string>
+    <string name="label_welcome">Welcome %s</string>
 
     <!-- EditText hints -->
     <string name="edt_fName">First Name</string>

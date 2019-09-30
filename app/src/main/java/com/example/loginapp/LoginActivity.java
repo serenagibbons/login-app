@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
 
     EditText e1, e2;
-    String userEmail, userPass;
+    String userFName, userEmail, userPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
             if ((boolean) b.get("Success")) {
                 Toast.makeText(this, getResources().getString(R.string.toast_success), Toast.LENGTH_LONG).show();
             }
+            userFName = (String) b.get("First Name");
             userEmail = (String) b.get("Email");
             userPass = (String) b.get("Password");
         }
@@ -43,7 +44,10 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, getResources().getString(R.string.toast_login), Toast.LENGTH_LONG).show();
             return;
         }
-        startActivity(new Intent(this, MainActivity.class));
+
+        Intent i = new Intent(this, MainActivity.class);
+        i.putExtra("First Name", userFName);
+        startActivity(i);
 
     }
 

@@ -31,7 +31,6 @@ public class RegistrationActivity extends AppCompatActivity {
         e3 = findViewById(R.id.edtDOB);
         e4 = findViewById(R.id.edtEmail);
         e5 = findViewById(R.id.edtPassword);
-
     }
 
     public void registerUser(View view) {
