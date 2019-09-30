@@ -58,15 +58,14 @@ public class RegistrationActivity extends AppCompatActivity {
             return;
         }
 
-        Intent register = new Intent(this, MainActivity.class);
-        register.putExtra("First Name", fName);
-        register.putExtra("Last Name", lName);
-        register.putExtra("Date of Birth", dob);
-        register.putExtra("Email", email);
-        register.putExtra("Password", pass);
-        register.putExtra("Success", true);
-        startActivity(register);
-
+        Intent intent = new Intent(this, LoginActivity.class);
+        intent.putExtra("First Name", fName);
+        intent.putExtra("Last Name", lName);
+        intent.putExtra("Date of Birth", dob);
+        intent.putExtra("Email", email);
+        intent.putExtra("Password", pass);
+        intent.putExtra("Success", true);
+        startActivity(intent);
     }
 
     public boolean validateInput() {

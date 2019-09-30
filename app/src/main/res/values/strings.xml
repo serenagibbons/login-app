@@ -10,6 +10,7 @@
     <!-- Activity labels -->
     <string name="label_login">Log in</string>
     <string name="label_reg">Register</string>
+    <string name="label_welcome">Welcome</string>
 
     <!-- EditText hints -->
     <string name="edt_fName">First Name</string>

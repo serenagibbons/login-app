@@ -12,13 +12,13 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        // show splash screen for 5 seconds before switching to MainActivity
+        // show splash screen for 5 seconds before switching to LoginActivity
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(mainIntent);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         }, 5000);
 

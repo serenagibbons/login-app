@@ -18,14 +18,18 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         e1 = findViewById(R.id.edtEmail2);
         e2 = findViewById(R.id.edtPassword2);
 
-        Intent in = getIntent();
-        Bundle bun = in.getExtras();
-        if (bun != null) {
-            userEmail = (String) bun.get("Email");
-            userPass = (String) bun.get("Password");
+        Intent i = getIntent();
+        Bundle b = i.getExtras();
+        if (b != null) {
+            if ((boolean) b.get("Success")) {
+                Toast.makeText(this, getResources().getString(R.string.toast_success), Toast.LENGTH_LONG).show();
+            }
+            userEmail = (String) b.get("Email");
+            userPass = (String) b.get("Password");
         }
 
     }
