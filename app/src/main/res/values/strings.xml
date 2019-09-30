@@ -18,6 +18,7 @@
     <string name="edt_fName">First Name</string>
     <string name="edt_lName">Last Name</string>
     <string name="edt_DOB">Date of Birth</string>
+    <string name="edt_DOBFormat">MM/dd/yy</string>
     <string name="edt_Email">Email</string>
     <string name="edt_Password">Password</string>
 
@@ -29,6 +30,7 @@
     <string name="toast_email">Invalid email address</string>
     <string name="toast_login">Invalid email and password combination</string>
     <string name="toast_success">You have successfully registered</string>
+    <string name="toast_date">Invalid date of birth, date should be in the format MM/dd/yy</string>
 
 
 
